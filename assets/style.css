@@ -1,0 +1,54 @@
+.figtharea{
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.figtharea .hero,
+.figtharea .monster{
+    flex: 1;
+
+}
+
+.life_bar{
+    height: 30px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.life{
+    background-color: #ff0000;
+    height: inherit;
+}
+
+.name{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#atack_button{
+    display:block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #2d2d2d;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.log{
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #444;
+    max-width:calc(50% - 20px);
+    margin: auto;
+    margin-top: 45px;
+}
