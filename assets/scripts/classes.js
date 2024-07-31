@@ -67,6 +67,9 @@ class Stage{
 
     start(){
         this.uptade();
+
+        this.figther1El.querySelector('#attack_button').addEventListener('click', () => this.doAttack(this.figther1, this.figther2));
+        this.figther2El.querySelector('#attack_button').addEventListener('click', () => this.doAttack(this.figther2, this.figther1));
     }
 
     uptade(){
@@ -80,5 +83,12 @@ class Stage{
         let pct2 = (this.figther2.life / this.figther2.maxLife) * 100;
         this.figther2El.querySelector('.life').style.width = `${pct2}%`;
 
+    }
+
+    doAttack(attacking, attacked){
+        console.log(`${attacking.name} está atacando ${attacked.name}`);
+
+
+        this.uptade();
     }
 }
