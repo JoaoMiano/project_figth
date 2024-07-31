@@ -1,4 +1,4 @@
-Sistema de Combate de Personagens
+#Sistema de Combate de Personagens
 Este projeto foi desenvolvido como um exercício para treinar conceitos de orientação a objetos (OO) em JavaScript. Ele simula um sistema de combate entre diferentes tipos de personagens, cada um com atributos e habilidades únicas. A aplicação permite que personagens como guerreiros, magos e monstros lutem entre si, com ataques, defesas e log de combate em tempo real.
 
 Descrição
