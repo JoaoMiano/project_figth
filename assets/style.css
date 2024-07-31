@@ -15,12 +15,13 @@
 .life_bar{
     height: 30px;
     border: 1px solid #555;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .life{
     background-color: #ff0000;
     height: inherit;
+    border-radius: inherit;
 }
 
 .name{

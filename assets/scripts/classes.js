@@ -56,3 +56,29 @@ class BigMonster extends Character{
         this.defese = 6;
     }
 }
+
+class Stage{
+    constructor(figther1,figther2, figther1El, figther2El ){
+        this.figther1 = figther1;
+        this.figther2 = figther2;
+        this.figther1El = figther1El;
+        this.figther2El = figther2El;
+    }
+
+    start(){
+        this.uptade();
+    }
+
+    uptade(){
+        //Figther 1
+        this.figther1El.querySelector('.name').innerHTML= `${this.figther1.name} - ${this.figther1.life} HP`;
+        let pct1 = (this.figther1.life / this.figther1.maxLife) * 100;
+        this.figther1El.querySelector('.life').style.width = `${pct1}%`;
+        
+        //Figther 2
+        this.figther2El.querySelector('.name').innerHTML= `${this.figther2.name} - ${this.figther2.life} HP`;
+        let pct2 = (this.figther2.life / this.figther2.maxLife) * 100;
+        this.figther2El.querySelector('.life').style.width = `${pct2}%`;
+
+    }
+}
