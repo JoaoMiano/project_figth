@@ -1,6 +1,6 @@
 Sistema de Combate de Personagens
 
-Este projeto foi desenvolvido como um exercício para treinar conceitos de orientação a objetos (OO) em JavaScript. Ele simula um sistema de combate entre diferentes tipos de personagens, cada um com atributos e habilidades únicas. A aplicação permite que personagens como guerreiros, magos e monstros lutem entre si, com ataques, defesas e log de combate em tempo real.
+Este projeto foi desenvolvido como um exercício para treinar conceitos de orientação a objetos (OO) em JavaScript. Ele simula um sistema de combate entre diferentes tipos de personagens, cada um com atributos unicos. A aplicação permite que personagens como guerreiros, magos e monstros lutem entre si, com ataques, defesas e log de combate em tempo real.
 
 Descrição
 O sistema é composto por várias classes principais:
@@ -22,9 +22,14 @@ A classe Log registra e exibe mensagens de log das ações ocorridas durante a b
 
 Como Usar
 Clone o repositório.
+
 Abra o arquivo index.html em seu navegador.
+
 Escolha os personagens a serem usados na batalha (modifique as instâncias no script se necessário).
+
 Inicie a luta e acompanhe o combate através dos elementos visuais e do log.
+
+
 
 let log = new Log(document.querySelector('.log'));
 
@@ -44,12 +49,18 @@ let stage = new Stage(
 stage.start();
 
 
+
+
 Funcionalidades
 Sistema de combate: Personagens podem atacar e defender.
+
 Interface interativa: Visualize a vida dos personagens e as ações de combate.
+
 Log de combate: Acompanhe as ações e eventos do combate em tempo real.
+
 Este projeto é um ótimo exemplo de como usar conceitos de orientação a objetos em JavaScript para criar uma aplicação interativa e funcional. Sinta-se à vontade para modificar e expandir o código para explorar ainda mais o paradigma de OO.
 
 
 Créditos
+
 Este projeto foi desenvolvido durante um curso de JavaScript,realizado pela plataforma B7WEB para treinar e reforçar os conceitos de orientação a objetos.
