@@ -58,11 +58,12 @@ class BigMonster extends Character{
 }
 
 class Stage{
-    constructor(figther1,figther2, figther1El, figther2El ){
+    constructor(figther1,figther2, figther1El, figther2El, log ){
         this.figther1 = figther1;
         this.figther2 = figther2;
         this.figther1El = figther1El;
         this.figther2El = figther2El;
+        this.log = log;
     }
 
     //Inicia a luta ao clicar no botão "Atacar"
@@ -94,10 +95,10 @@ class Stage{
         //Verificando se o atacante ou o atacado esta vivo
 
         if (attacking.life <= 0){
-            console.log("Morto não ataca!");
+            this.log.addMensage("Morto não ataca!");
             return;
         }else if(attacked.life <= 0){
-            console.log("Chutando cachorro morto!")
+            this.log.addMensage("Chutando cachorro morto!")
             return;
         }
 
@@ -116,13 +117,32 @@ class Stage{
         if(actualAttack > actualDefese){
             attacked.life -= actualAttack;
 
-            console.log(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano no ${attacked.name}`)
+            this.log.addMensage(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano no ${attacked.name}`)
         } else{
-            console.log(`${attacked.name} conseguiu defender`)
+            this.log.addMensage(`${attacked.name} conseguiu defender`)
         }
 
-
-
         this.uptade();
+    }
+}
+
+class Log{
+    list = []
+
+    constructor(listEl){
+        this.listEl = listEl
+    }
+
+    addMensage(msg){
+        this.list.push(msg);
+        this.render();
+    }
+
+    render(){
+        this.listEl.innerHTML = "";
+
+        for(let i in this.list){
+            this.listEl.innerHTML += `<li>${this.list[i]}</li>`
+        }
     }
 }
