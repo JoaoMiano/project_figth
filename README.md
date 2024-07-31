@@ -21,13 +21,15 @@ Log
 A classe Log registra e exibe mensagens de log das ações ocorridas durante a batalha, ajudando a acompanhar os eventos em tempo real.
 
 Como Usar
-Clone o repositório.
 
-Abra o arquivo index.html em seu navegador.
 
-Escolha os personagens a serem usados na batalha (modifique as instâncias no script se necessário).
+1 - Clone o repositório.
 
-Inicie a luta e acompanhe o combate através dos elementos visuais e do log.
+2 - Abra o arquivo index.html em seu navegador.
+
+3 - Escolha os personagens a serem usados na batalha (modifique as instâncias no script se necessário).
+
+4 - Inicie a luta e acompanhe o combate através dos elementos visuais e do log.
 
 
 
